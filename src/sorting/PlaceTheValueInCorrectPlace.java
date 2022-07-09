@@ -1,7 +1,7 @@
 package sorting;
 //We have a problem where A is an Array with N elements already arranged in ascending order. You have been given a
 //number X which is to be placed in the array in such a way that after insertion also the array remains in ascending order.
-
+//
 //Example Array int[] series={14,16,19,21} x= 17 Expected Output: int[] series={14,16,17,19,21}
 public class PlaceTheValueInCorrectPlace {
 
@@ -15,6 +15,8 @@ public class PlaceTheValueInCorrectPlace {
                 newArray[k] = series[k];
             }
         }
+
+//        newArr = {14,16,19,21,17}
 
         for(int i = series.length; i < newArray.length; i++){
             int x = newArray[i];
@@ -35,8 +37,8 @@ public class PlaceTheValueInCorrectPlace {
     }
 
     public static void main(String[] args) {
-        int[] series = {14,16,19,21};
-        int x = 17;
+        int[] series = {14,15,16,19,21,78,111};
+        int x = 11;
         printArray(sortArray(series,x));
     }
 }
